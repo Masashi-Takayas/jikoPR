@@ -1,0 +1,101 @@
+.flex {
+    display: flex;
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    margin-right: 80%;
+}
+
+body {
+    background-color: rgb(227, 227, 227);
+    margin: 0 10% 0 10%
+}
+
+.margin {
+    margin: 50% 0 0 10%;
+}
+
+.margin2 {
+    margin: 0 28% 0 30%;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: rgba(255, 218, 218, 0.142);
+}
+
+.padding {
+    padding-left: 10%;
+}
+
+a {
+    font-size: x-large;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    transition: .3s;
+}
+
+a::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #31aae2;
+    transition: .3s;
+    transform: translateX(-50%);
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+a:hover {
+    color: #31aae2;
+}
+
+a:active {
+    color: #26a69a;
+}
+
+h1 {
+    margin: 0 0 0 0;
+}
+
+h2 {
+    margin: 50px 0 0 0;
+}
+
+.radius {
+    border-radius: 50%;
+}
+
+.border {
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: rgb(157, 157, 157);
+}
+
+.border .flex p {
+    width: 50%;
+    height: 10%;
+    margin: 10px 10px 0 10px;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: #83bfff;
+}
+
+.border .flex img {
+    margin-left: 10px;
+    margin-top: 10px
+}
+
+button {
+    border-radius: 10px;
+    margin: 10px 10px 10px 10px;
+}
